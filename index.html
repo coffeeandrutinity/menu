@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee and Rutinity</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mengatur item dari atas */
+            min-height: 100vh;
+            color: #333;
+            /* Latar belakang gambar penuh pada body */
+            background-image: url('kopi.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Gambar tetap saat discroll */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            color: #ffffff; /* Warna teks putih agar kontras dengan latar */
+            margin: 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks lebih kuat */
+        }
+        
+        .header h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #f0f0f0; /* Warna lebih terang */
+            margin-top: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-category {
+            margin-bottom: 30px;
+            padding: 20px 30px;
+            background: rgba(255, 255, 255, 0.4); /* Latar belakang semi-transparan */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: left;
+        }
+
+        .menu-category h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: #3d3d3d; /* Warna teks kategori */
+            border-bottom: 2px solid #a87e68;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px dashed rgba(102, 102, 102, 0.4);
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .item-details {
+            text-align: left;
+        }
+        
+        .item-name {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #3d3d3d;
+        }
+        
+        .item-description {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .item-price {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #5d4037;
+        }
+        
+        /* Scrollbar Style for WebKit browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(241, 241, 241, 0.5);
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #2e8b57;
+            border-radius: 6px;
+            border: 3px solid rgba(241, 241, 241, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Coffee and Rutinity</h1>
+            <h2>Nikmati Kopi Pilihan Terbaik</h2>
+        </div>
+
+        <div class="menu-category">
+            <h3>MANUAL BREW</h3>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Tubruk</div>
+                    <div class="item-description">Kopi asli</div>
+                </div>
+                <div class="item-price">5K / -</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Aeropress</div>
+                    <div class="item-description">Kopi asli dengan aero filter</div>
+                </div>
+                <div class="item-price">10K / 12K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">V60</div>
+                    <div class="item-description">Kopi pour over asli</div>
+                </div>
+                <div class="item-price">10K / -</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Japanese</div>
+                    <div class="item-description">Kopi pour over dingin asli</div>
+                </div>
+                <div class="item-price">- / 12K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Vietnam Drip</div>
+                    <div class="item-description">Kopi hitam dengan susu</div>
+                </div>
+                <div class="item-price">7K / 8K</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>ESPRESSO</h3>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Americano</div>
+                    <div class="item-description">Air dan single shot espresso</div>
+                </div>
+                <div class="item-price">8K / 9K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Long Black</div>
+                    <div class="item-description">Double shot espresso dan air</div>
+                </div>
+                <div class="item-price">8K / 9K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Cappuccino</div>
+                    <div class="item-description">Espresso dengan susu dan busa</div>
+                </div>
+                <div class="item-price">10K / 12K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Latte</div>
+                    <div class="item-description">Espresso dengan UHT dan busa</div>
+                </div>
+                <div class="item-price">10K / 12K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Macchiato</div>
+                    <div class="item-description">Espresso dengan susu sederhana</div>
+                </div>
+                <div class="item-price">10K / 12K</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>NON COFFEE</h3>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Original Tea</div>
+                    <div class="item-description">Teh dengan sirup sederhana</div>
+                </div>
+                <div class="item-price">2K / 3K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Teh Tarik</div>
+                    <div class="item-description">Teh dengan sirup sederhana</div>
+                </div>
+                <div class="item-price">6K / 7K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Original Lemon</div>
+                    <div class="item-description">Lemon dengan sirup sederhana</div>
+                </div>
+                <div class="item-price">5K / 6K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Lemon Tea</div>
+                    <div class="item-description">Lemon asli dengan teh</div>
+                </div>
+                <div class="item-price">6K / 7K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Lemon Squash</div>
+                    <div class="item-description">Lemon dan sirup sederhana dengan soda</div>
+                </div>
+                <div class="item-price">- / 7K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Original Coklat</div>
+                    <div class="item-description">Coklat dengan sirup sederhana</div>
+                </div>
+                <div class="item-price">8K / 9K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Cocholatte</div>
+                    <div class="item-description">Coklat dan UHT dengan busa</div>
+                </div>
+                <div class="item-price">10K / 10K</div>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>SIGNATURE</h3>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Tubruk + Susu</div>
+                    <div class="item-description">Kopi hitam dan susu</div>
+                </div>
+                <div class="item-price">6K / -</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Mokapot + Susu</div>
+                    <div class="item-description">Kopi hitam filter dan susu</div>
+                </div>
+                <div class="item-price">7K / 8K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Biscuits Iced Coffee</div>
+                    <div class="item-description">Espresso dengan UHT dan biskuit</div>
+                </div>
+                <div class="item-price">10K / 12K</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Pulen Iced Coffee</div>
+                    <div class="item-description">Gula aren dengan espresso dan UHT</div>
+                </div>
+                <div class="item-price">10K / 12K</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
